@@ -12,7 +12,7 @@ on:
       - main
       - master
     paths:
-      - .github/workflows/semgrep.yml
+      - .github/workflows/test.yml
 
 permissions:
   contents: read
