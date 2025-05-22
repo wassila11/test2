@@ -42,10 +42,10 @@ jobs:
           # and add it to your GitHub secrets.
           SEMGREP_APP_TOKEN: "43c0b71925de0b126a66ec56016d80d697477c1b427937308f9aa676f352a46d"
       - name: Upload Semgrep Results as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4s
         with:
           name: semgrep-results
-          path: ./path-to-results/ # Change this to the directory where the Semgrep results are stored
+          path: ./ # Change this to the directory where the Semgrep results are stored
 
   download-artifact:
     name: Download Semgrep Results
